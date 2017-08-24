@@ -50,7 +50,7 @@ def getFiles():
 
     files = []
     for f in os.listdir(dirr):
-        if f[-4:] in ('.ppt','pptx'):
+        if f[-4:].lower() in ('.ppt','pptx'):
             files += [f]
 
     def sortNum(files) :
